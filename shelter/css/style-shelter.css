@@ -1,50 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     position: relative;
+    background:
+        url('/shelter/images/svg/texture.svg'),
+        radial-gradient(circle at top left, rgba(91, 72, 58, 1) 0%, rgba(33, 31, 32, 1) 100%);
+    background-size: 150px 148px, cover;
+    background-repeat: repeat, no-repeat;
+    background-position: center;
 }
 
 .start-screen-gradient-background {
+    position: relative;
     width: 1280px;
     height: 908px;
-    background: linear-gradient(0deg, #211f20, #211f20),
-        radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
-    position: absolute;
     opacity: 1;
 }
 
+.content-container,
 header {
-    width: 100%;
-    height: 60px;
-    padding: 0px;
-    color: white;
-    text-align: center;
-    font-family: Georgia;
-    background: linear-gradient(0deg, #211f20, #211f20),
-        radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
-    position: fixed;
-    top: 0;
-    z-index: 10;
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .content-container {
-    width: 1200px;
     height: 728px;
-    position: relative;
-    top: 90px;
-    left: 40px;
-    opacity: 1;
+    bottom: 0;
+}
+
+header {
+    height: 60px;
+    top: 30px;
+    color: white;
+    text-align: center;
+    font-family: Georgia;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: 184px;
+    height: 60px;
+}
+
+.logo-container svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-container span,
+.nav-menu a {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FAFAFA;
+}
+
+.nav-menu {
+    width: 443px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu a {
+    line-height: 24px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    width: 460px;
+    height: 322px;
+    position: absolute;
+    top: 163px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .h2-container {
     width: 460px;
-    height: 322px;
+    height: 72px;
+}
+
+.description {
+    width: 460px;
+    height: 72px;
     position: absolute;
-    top: 0;
+    top: 156px;
     left: 0;
-    opacity: 1;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(205, 205, 205, 1);
+}
+
+.button-container {
+    width: auto;
+    height: 52px;
+    position: absolute;
+    top: 270px;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 100px;
+    background-color: rgba(241, 205, 179, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-text {
+    width: 170px;
+    font-family: Georgia;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.1px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: rgba(41, 41, 41, 1);
 }
 
 .styled-heading {
@@ -52,12 +172,14 @@ header {
     font-size: 44px;
     font-weight: 400;
     line-height: 57.2px;
+    position: absolute;
+    left: 0;
     text-align: left;
     color: #ffffff;
-    width: 310px;
+    width: 400px;
     height: 114px;
     margin: 0;
-    padding: 10px;
+    padding: 0px;
 }
 
 .main-puppy {
@@ -66,4 +188,77 @@ header {
     top: 0px;
     width: 698px;
     height: 728px;
+}
+
+.second-screen {
+    width: 1280px;
+    height: 588px;
+    top: 908px;
+    padding: 80px 40px 100px 40px;
+    position: absolute;
+    background: rgba(255, 255, 255, 1);
+}
+
+.second-content-container {
+    width: 1200px;
+    height: 408px;
+    padding: 0px 175px;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-area {
+    position: absolute;
+    width: 430px;
+    height: 380px;
+    top: 14px;
+    left: 595px;
+}
+
+#about-pets {
+    position: absolute;
+    left: 175px;
+    top: 0;
+    width: 300px;
+    height: auto;
+    max-height: 408px;
+}
+
+.second-styled-heading,
+.second-screen-description-one,
+.second-screen-description-two {
+    position: absolute;
+    font-family: Georgia;
+}
+
+.second-styled-heading {
+    width: 370px;
+    height: 90px;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: rgba(84, 84, 84, 1);
+}
+
+.second-screen-description-one,
+.second-screen-description-two {
+    width: 430px;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(76, 76, 76, 1);
+}
+
+.second-screen-description-one {
+    height: 96px;
+    top: 115px;
+}
+
+.second-screen-description-two {
+    height: 144px;
+    top: 236px;
 }
