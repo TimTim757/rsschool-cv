@@ -36,7 +36,7 @@ main {
     position: relative;
 }
 
-.start-screen-gradient-background {
+.not-only-first-block {
     position: relative;
     width: 1280px;
     height: 908px;
@@ -190,7 +190,7 @@ header {
     height: 728px;
 }
 
-.second-screen {
+.about-second-block {
     width: 1280px;
     height: 588px;
     top: 908px;
@@ -263,7 +263,7 @@ header {
     top: 236px;
 }
 
-.third-screen {
+.our-friends-third-block {
     width: 1280px;
     height: 877px;
     top: 1496px;
@@ -456,7 +456,7 @@ header {
     font-size: 18px;
 }
 
-.how-to-help {
+.help-fourth-block {
     position: absolute;
     width: 1280px;
     height: 611px;
@@ -475,4 +475,131 @@ header {
     padding: 0px 87px 0px 87px;
     gap: 0px;
     opacity: 0px;
+}
+
+.in-addition-fifth-block {
+    position: absolute;
+    width: 1280px;
+    height: 462px;
+    top: 2984px;
+    padding: 80px 182px 100px 183px;
+    gap: 0px;
+    opacity: 0px;
+    background: rgba(246, 246, 246, 1);
+}
+
+.donation-content {
+    position: absolute;
+    width: 915px;
+    height: 282px;
+    top: 80px;
+    left: 183px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.donation-dog-photo {
+    position: absolute;
+    width: 505px;
+    height: 261px;
+    top: 11px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.donation-inner-content {
+    position: absolute;
+    width: 380px;
+    height: 282px;
+    left: 720px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.donation-heading-h3 {
+    position: absolute;
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: rgba(84, 84, 84, 1);
+}
+
+.donation-heading-h5 {
+    position: absolute;
+    width: 315px;
+    height: 17px;
+    top: 110px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16.5px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: rgba(84, 84, 84, 1);
+}
+
+.credit-card-button-container {
+    width: 349px;
+    height: 43px;
+    position: absolute;
+    top: 147px;
+    padding: 10px 15px 10px 15px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: rgba(241, 205, 179, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+
+
+.credit-card-button-text {
+    position: absolute;
+    width: 274px;
+    height: 23px;
+    top: 10px;
+    left: 60px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Georgia;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: rgba(84, 84, 84, 1);
+}
+
+.credit-card-svg {
+    position: absolute;
+    width: 30px;
+    height: 23px;
+    top: 10px;
+    left: 15px;
+    gap: 0px;
+    opacity: 0px;
+    color: rgba(41, 41, 41, 1);
+}
+
+.legal-info {
+    position: absolute;
+    width: 380px;
+    height: 72px;
+    top: 210px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: rgba(178, 178, 178, 1);
 }
